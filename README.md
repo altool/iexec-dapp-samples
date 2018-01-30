@@ -4,7 +4,7 @@ A dapp to download websites offline like a decentralized web browser. Simple pas
 ## Dapp params
 To execute it, do the following:
 1. Deploy the app with: `iexec deploy`
-2. Submit the work with: `iexec submit '{"cmdline": "--url https://<your-website>.com"}'``
+2. Submit the work with: `iexec submit "{\"cmdline\": \"--url https://your-website.com\"}"`
 3. Check the status of the result with: `iexec result <tx-hash>``
 4. Once the job has been processed, get the file with: `iexec result <tx-hash> --save`
 5. Convert the file to html by changing it's name to: `page.html` or similar
@@ -23,7 +23,7 @@ module.exports = {
     os: 'LINUX',
   },
   work: {
-		cmdline:'--url https://<YOUR-URL-HERE>.com',
+		"cmdline": "--url https://<YOUR-URL-HERE>.com",
   }
 };
 ```
